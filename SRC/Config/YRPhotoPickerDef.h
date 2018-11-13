@@ -9,5 +9,9 @@
 #ifndef YRPhotoPickerDef_h
 #define YRPhotoPickerDef_h
 
+typedef enum : NSUInteger {
+    HYPhotoCheckFailedReasonUnknow,
+    HYPhotoCheckFailedReasonFull
+} HYPhotoCheckFailedReason;
 
 #endif /* YRPhotoPickerDef_h */

@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PHAsset_YR : PHAsset
+@interface PHAsset(YR)
+
+- (NSData *)originImageJPEGData;
+
+- (UIImage *)originImage;
 
 @end
 

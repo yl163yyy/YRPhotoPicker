@@ -14,6 +14,10 @@
 		1C9A26FB219A83620080AB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A26FA219A83620080AB16 /* Assets.xcassets */; };
 		1C9A26FE219A83620080AB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A26FC219A83620080AB16 /* LaunchScreen.storyboard */; };
 		1C9A2701219A83630080AB16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A2700219A83630080AB16 /* main.m */; };
+		1C9A270A219A84B70080AB16 /* YRPhotoPickerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A2709219A84B70080AB16 /* YRPhotoPickerConfig.m */; };
+		1C9A2713219A879F0080AB16 /* UIColor+YR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A2712219A879F0080AB16 /* UIColor+YR.m */; };
+		1C9A2716219A87D50080AB16 /* UIView+YR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A2715219A87D50080AB16 /* UIView+YR.m */; };
+		1C9A2719219A87F40080AB16 /* PHAsset+YR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A2718219A87F40080AB16 /* PHAsset+YR.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,15 @@
 		1C9A26FD219A83620080AB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C9A26FF219A83620080AB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9A2700219A83630080AB16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C9A2708219A84B70080AB16 /* YRPhotoPickerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRPhotoPickerConfig.h; sourceTree = "<group>"; };
+		1C9A2709219A84B70080AB16 /* YRPhotoPickerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRPhotoPickerConfig.m; sourceTree = "<group>"; };
+		1C9A270F219A86380080AB16 /* YRPhotoPickerDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRPhotoPickerDef.h; sourceTree = "<group>"; };
+		1C9A2711219A879F0080AB16 /* UIColor+YR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YR.h"; sourceTree = "<group>"; };
+		1C9A2712219A879F0080AB16 /* UIColor+YR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YR.m"; sourceTree = "<group>"; };
+		1C9A2714219A87D50080AB16 /* UIView+YR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YR.h"; sourceTree = "<group>"; };
+		1C9A2715219A87D50080AB16 /* UIView+YR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YR.m"; sourceTree = "<group>"; };
+		1C9A2717219A87F40080AB16 /* PHAsset+YR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHAsset+YR.h"; sourceTree = "<group>"; };
+		1C9A2718219A87F40080AB16 /* PHAsset+YR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+YR.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 		1C9A26E2219A83610080AB16 = {
 			isa = PBXGroup;
 			children = (
+				1C9A2707219A84A10080AB16 /* SRC */,
 				1C9A26ED219A83610080AB16 /* YRPhotoPicker */,
 				1C9A26EC219A83610080AB16 /* Products */,
 			);
@@ -74,6 +88,55 @@
 				1C9A2700219A83630080AB16 /* main.m */,
 			);
 			path = YRPhotoPicker;
+			sourceTree = "<group>";
+		};
+		1C9A2707219A84A10080AB16 /* SRC */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A2710219A87590080AB16 /* Utils */,
+				1C9A270C219A857E0080AB16 /* AlbumPicker */,
+				1C9A270D219A858B0080AB16 /* PhotoPicker */,
+				1C9A270B219A85700080AB16 /* Config */,
+			);
+			name = SRC;
+			path = ../SRC;
+			sourceTree = "<group>";
+		};
+		1C9A270B219A85700080AB16 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A270F219A86380080AB16 /* YRPhotoPickerDef.h */,
+				1C9A2708219A84B70080AB16 /* YRPhotoPickerConfig.h */,
+				1C9A2709219A84B70080AB16 /* YRPhotoPickerConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		1C9A270C219A857E0080AB16 /* AlbumPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlbumPicker;
+			sourceTree = "<group>";
+		};
+		1C9A270D219A858B0080AB16 /* PhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoPicker;
+			sourceTree = "<group>";
+		};
+		1C9A2710219A87590080AB16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A2711219A879F0080AB16 /* UIColor+YR.h */,
+				1C9A2712219A879F0080AB16 /* UIColor+YR.m */,
+				1C9A2714219A87D50080AB16 /* UIView+YR.h */,
+				1C9A2715219A87D50080AB16 /* UIView+YR.m */,
+				1C9A2717219A87F40080AB16 /* PHAsset+YR.h */,
+				1C9A2718219A87F40080AB16 /* PHAsset+YR.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +211,12 @@
 			files = (
 				1C9A26F3219A83610080AB16 /* MasterViewController.m in Sources */,
 				1C9A26F0219A83610080AB16 /* AppDelegate.m in Sources */,
+				1C9A270A219A84B70080AB16 /* YRPhotoPickerConfig.m in Sources */,
 				1C9A2701219A83630080AB16 /* main.m in Sources */,
+				1C9A2713219A879F0080AB16 /* UIColor+YR.m in Sources */,
+				1C9A2719219A87F40080AB16 /* PHAsset+YR.m in Sources */,
 				1C9A26F6219A83610080AB16 /* DetailViewController.m in Sources */,
+				1C9A2716219A87D50080AB16 /* UIView+YR.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

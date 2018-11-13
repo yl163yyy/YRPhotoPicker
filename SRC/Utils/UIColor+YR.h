@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIColor_YR : UIColor
+@interface UIColor(YR)
 
 @end
 

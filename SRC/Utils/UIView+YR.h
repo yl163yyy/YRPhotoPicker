@@ -10,7 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView_YR : UIView
+@interface UIView(YR)
+
+
++ (CGFloat)yr_screenWidth;
++ (CGFloat)yr_screenHeight;
++ (CGFloat)yr_statusBarHeight;
++ (CGFloat)yr_naviBarHeight;
++ (CGFloat)yr_topPadding;
++ (UIEdgeInsets)yr_safeAreaInsets;
+
+@property (nonatomic) CGFloat yr_width;
+@property (nonatomic) CGFloat yr_height;
+@property (nonatomic, assign) CGFloat yr_left;
+@property (nonatomic, assign) CGFloat yr_right;
+@property (nonatomic, assign) CGFloat yr_top;
+@property (nonatomic, assign) CGFloat yr_bottom;
+@property (nonatomic, assign) CGFloat yr_centerY;
+@property (nonatomic, assign) CGFloat yr_centerX;
+@property (nonatomic, assign) CGSize yr_size;
+@property (nonatomic, assign) CGPoint yr_origin;
+
 
 @end
 

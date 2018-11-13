@@ -8,6 +8,6 @@
 
 #import "UIColor+YR.h"
 
-@implementation UIColor_YR
+@implementation UIColor(YR)
 
 @end
